@@ -11,6 +11,7 @@ export const Player = ({src, selected, setSelect, max}) => {
   };
 
   const stepSong = (dir) => {
+    setPlay(false)
     if(selected + dir > max) {
       setSelect(0)
     } else if ( selected + dir < 0) {
