@@ -11,6 +11,7 @@ const Img = styled('img',{
   marginBottom: '10px',
   width: '30%',
   height: '30%',
+  border: 'solid black 2px',
   variants: {
     border: {
       rounded:{ 

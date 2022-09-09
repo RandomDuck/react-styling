@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react';
+import { styled } from './stitch';
 import { useRef, useState } from 'react';
 
 export const Player = ({src, selected, setSelect, max}) => {
@@ -39,9 +39,10 @@ export const Player = ({src, selected, setSelect, max}) => {
 const PaddedDiv = styled('div', {paddingTop: '20px'});
 
 const PlayButton = styled('button',{
-  borderRadius: "20px",
+  borderRadius: '20px',
+  backgroundColor: '$buttonBg',
   '&:hover': {
-    backgroundColor: "#888"
+    backgroundColor: '$button'
   },
   variants: {
     type: {
